@@ -26,7 +26,7 @@
 * `if else` 是用来做判断 `if defined input` 是用来判断用户是否输入信息，回车的话，则表示未定义input的值
 * `set javaPath=%input%` 是用来吧变量input的值赋值给javaPath变量的
 * `wmic` 是提供了批处理的命令，可以方便的操作环境变量值
-* `if else 语句
+* `if else` 语句
 
     1.增强用法：IF [/I] string1 compare-op string2 command
     
