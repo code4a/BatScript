@@ -43,12 +43,20 @@
       
     4.上面的command命令都可以用小括号来使用多条命令的组合，包括else子句，组合命令中可以嵌套使用条件或循环命令。
 
-* 删除某一环境变量 就使用 `wmic ENVIRONMENT where "name='JAVA_HOME'" delete`命令
-* 创建某一环境变量 使用 `wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="%javaPath%"`命令
-* 修改某一环境变量 使用 `wmic ENVIRONMENT where "name='Path' and username='<system>'" set VariableValue="value"`
+* 删除某一环境变量 就使用命令
+
+        `wmic ENVIRONMENT where "name='JAVA_HOME'" delete`
+        
+* 创建某一环境变量 使用命令
+
+        `wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="%javaPath%"`
+        
+* 修改某一环境变量 使用命令
+
+        `wmic ENVIRONMENT where "name='Path' and username='<system>'" set VariableValue="value"`
 
 **注意事项：**
 
-　1、在上述批处理脚本命令中，要严格注意空格和大小写等的输入，不然执行不成功的
-　
-  2、要以管理员方式运行命令，不然提示拒绝执行命令的提示
+1、在上述批处理脚本命令中，要严格注意空格和大小写等的输入，不然执行不成功的
+
+2、要以管理员方式运行命令，不然提示拒绝执行命令的提示
